@@ -1,6 +1,5 @@
 library hanzi_writer_data_flutter;
 
-import 'dart:convert';
 import 'package:flutter/services.dart';
 
 /// Loads parsed stroke order data for a given Chinese character.
@@ -12,11 +11,11 @@ import 'package:flutter/services.dart';
 /// ```dart
 /// final data = await loadCharData('我');
 /// ```
-Future<Map<String, dynamic>> loadCharData(String char) async {
+Future<String> loadCharData(String char) async {
   try {
-    final jsonStr = await rootBundle.loadString(
+    final jsonString = await rootBundle.loadString(
         'packages/hanzi_writer_data_flutter/assets/hanzi/$char.json');
-    return json.decode(jsonStr) as Map<String, dynamic>;
+    return jsonString;
   } catch (e) {
     throw Exception(
         "Character data for '$char' not found or failed to load. Error: $e");

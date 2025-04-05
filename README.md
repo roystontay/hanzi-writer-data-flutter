@@ -28,7 +28,7 @@ A small utility library to load Chinese character stroke order data (as used by 
 import 'package:hanzi_writer_data_flutter/hanzi_writer_data_flutter.dart';
 
 final data = await loadCharData('我');
-print(data['strokes']);
+print(data);
 ```
 
 ## Acknowledgments
