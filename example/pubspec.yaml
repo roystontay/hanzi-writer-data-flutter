@@ -1,5 +1,5 @@
-name: hanzi_writer_data_flutter
-description: A tiny Flutter utility to load Chinese character stroke order data offline.
+name: hanzi_writer_data_flutter example
+description: An example to showcase hanzi_writer_data_flutter, a tiny Flutter utility to load Chinese character stroke order data offline.
 version: 0.0.1
 homepage: https://github.com/roystontay/hanzi-writer-data-flutter
 repository: https://github.com/roystontay/hanzi-writer-data-flutter
